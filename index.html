@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" href="src/Photos/channels4_profile.jpg">
+  <meta name="description" content="Welcome to our loving church">
+  <title>Church Welcome & Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-brand" onclick="navigateTo('home')" style="display: flex; align-items: center;">
+      <img src="src/Photos/channels4_profile.jpg" alt="F.L.A.G Logo"
+        style="height: 45px; margin-right: 12px; object-fit: contain;">
+      FLAG MEDIA
+    </div>
+    <div class="nav-links" style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+      <button onclick="navigateTo('home')">Home</button>
+      <button onclick="navigateTo('about')">About</button>
+      <button onclick="navigateTo('watch')">Watch</button>
+      <button onclick="navigateTo('events_page')">Events</button>
+      <button onclick="navigateTo('kids_church')">Kid's Church</button>
+      <button onclick="navigateTo('give')">Give</button>
+      <button onclick="navigateTo('login')" id="admin-nav-btn">Login</button>
+      <button onclick="logout()" id="logout-btn" style="display: none;">Logout</button>
+      <a href="tel:9876543210" class="btn-small" style="background: var(--primary); color: white; text-decoration: none; display: flex; align-items: center; gap: 0.3rem; padding: 0.5rem 0.8rem; border-radius: 9999px; font-size: 0.85rem;" title="Call Us">
+        <span>📞</span> Call
+      </a>
+      <a href="https://youtube.com/@fulllifeagchurch?si=nrIxhsDwDnJcVpjC" target="_blank" class="yt-icon"
+        title="Visit us on YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <main id="app-container">
+    <!-- Views will be injected here by app.js -->
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
