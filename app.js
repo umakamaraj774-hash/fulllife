@@ -293,6 +293,9 @@ function render() {
                 <p>We are a loving community welcoming everyone with open arms. Join us as we grow together in faith, hope, and love.</p>
                 <br>
                 <button class="btn" onclick="document.getElementById('events').scrollIntoView({behavior: 'smooth'})" style="width: auto;">See Sunday Services</button>
+                <a href="tel:9876543210" class="btn" style="width: auto; background: #1e293b; margin-left: 0.5rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <span>📞</span> Contact Us
+                </a>
             </div>
             
             <div class="card-body" style="background: white; border: 2px solid var(--border); border-radius: 2.5rem; padding: 2rem; max-width: 400px; margin: 3rem auto; box-shadow: var(--shadow-md); position: relative; overflow: hidden;">
@@ -535,8 +538,7 @@ function render() {
                         </a>
                     </div>
                 </div>
-            </div>
-        `;;
+        `;
     }
     else if (currentView === 'watch') {
         appContainer.innerHTML = `
